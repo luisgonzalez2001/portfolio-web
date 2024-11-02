@@ -1,0 +1,231 @@
+:root {
+    --black: #0d1117;
+    --white: #ffffff;
+    --gray: #4e5053;
+    --gold: #bb871e;
+    --dark-blue: #1d2236;
+    --purple: #a855f7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--black);
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.nav-logo-container img{
+    height: 60px;
+}
+
+.nav-link-container {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link-container a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-contact-container img{
+    height: 40px;
+}
+
+.main-home {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #0d1117, #06101f, #020d27, #01092e, #050334);
+}
+
+.main-home p {
+    margin-top: 40px;
+    font-family: "DynaPuff", system-ui;
+    color: var(--white);
+    font-size: 4.2rem;
+    text-align: center;
+}
+
+.main-home span {
+    color: var(--gold);
+}
+
+.main-home img {
+    width: 320px;
+}
+
+.main-about-me {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+h2 {
+    font-family: "DynaPuff", system-ui;
+    font-size: 4.2rem;
+    color: var(--gold);
+    margin-bottom: 50px;
+}
+
+.main-about-me p {
+    display: inline-block;
+    max-width: 700px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.main-skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-container {
+    width: 60%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: 150px 150px;
+    gap: 5px;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px outset var(--gray);
+    border-radius: 10px;
+    background-color: var(--dark-blue);
+}
+
+.skill-item img {
+    height: 60%;
+}
+
+.main-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.projects-container {
+    width: 70%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-item {
+    color: var(--gray);
+    border: 1px outset var(--gold);
+    border-radius: 10px;
+    background-color: var(--dark-blue);
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+.project-item .title {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.project-item .description {
+    padding: 0 20px 0 20px;
+    margin-bottom: 20px;
+}
+
+.project-item .technologies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20px 0 20px;
+    margin-bottom: 20px;
+}
+
+.project-item .technology-item {
+    padding: 2px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--purple);
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+.project-item .footer-project {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.project-item .btn-see-more {
+    display: flex;
+    padding: 5px 10px;
+    color: var(--black);
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #ba8bbc, #bc7dc8, #ba6fd6, #b461e6, #a855f7);
+}
+
+.project-item .icons-container {
+    display: flex;
+    gap: 10px;
+}
+
+.see-more-icon {
+    margin-right: 6px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: center / contain no-repeat url('../assets/information-circle-outline.svg');
+}
+
+.github-icon {
+    display: block;
+    width: 32px;
+    height: 28px;
+    border-radius: 5px;
+    background: center / 60% no-repeat url('../assets/logo-github.svg');
+    background-color: var(--white);
+}
+
+.web-icon {
+    display: block;
+    width: 32px;
+    height: 28px;
+    border-radius: 5px;
+    background: center / 60% no-repeat url('../assets/globe-sharp.svg');
+    background-color: var(--white);
+}
