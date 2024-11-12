@@ -15,37 +15,45 @@
             <a href="/"><img src="./assets/logo-icon.svg" alt="Logo de mi blog"></a>
         </section>
         <section class="nav-link-container">
-            <a href="">ABOUT ME</a>
-            <a href="">SKILLS</a>
-            <a href="">PROJECTS</a>
+            <a href="#aboutMe">ABOUT ME</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
         </section>
         <section class="nav-contact-container">
-            <a href="/"><img src="./assets/contact-icon.svg" alt="Logo de mi blog"></a>
+            <a href="#contactMe"><img src="./assets/contact-icon.svg" alt="Logo de mi blog"></a>
         </section>
     </header>
     <main>
         <section class="main-home">
             <p>I'm <span>Luis Gonzalez</span><br>Computer Engineer</p>
-            <img src="./assets/profile-picture.png" alt="">
+            <img src="./assets/profile_picture2.png" alt="">
+            <div class="buttons-container">
+                <button onclick="location.href='#projects'">SWOW MY PROJETS <span class="folder-icon"></span></button>
+                <button>GET RESUME <span class="download-icon"></span></button>
+            </div>
+            <p class="hello-icon">> Hello World!</p>
         </section>
-        <section class="main-about-me">
+        <section class="main-about-me" id="aboutMe">
             <h2>WHO AM I?</h2>
             <p>I am a current computer engineering student about to finish my degree looking to expand my professional skills. <br>I love programming, it is one of the reasons why I decided to dedicate myself to this. Additionally, I like to take time to work on myself, such as going to the gym meditating and eating healthy.</p>
+            <img src="./assets/picture1.jpg" alt="" class="picture1">
+            <img src="./assets/picture2.jpg" alt="" class="picture2">
+            <img src="./assets/picture3.jpg" alt="" class="picture3">
         </section>
-        <section class="main-skills">
+        <section class="main-skills" id="skills">
             <h2>MY SKILLS</h2>
             <section class="skills-container">
-                <div class="skill-item"><img src="./assets/profile-picture.png" alt=""></div>
-                <div class="skill-item"><img src="./assets/profile-picture.png" alt=""></div>
-                <div class="skill-item"><img src="./assets/profile-picture.png" alt=""></div>
-                <div class="skill-item"><img src="./assets/profile-picture.png" alt=""></div>
-                <div class="skill-item"><img src="./assets/profile-picture.png" alt=""></div>
-                <div class="skill-item"><img src="./assets/profile-picture.png" alt=""></div>
-                <div class="skill-item"><img src="./assets/profile-picture.png" alt=""></div>
-                <div class="skill-item"><img src="./assets/profile-picture.png" alt=""></div>
+                <div class="skill-item"><img src="./assets/HTML5_logo.png" alt=""></div>
+                <div class="skill-item"><img src="./assets/CSS3_logo.svg" alt=""></div>
+                <div class="skill-item"><img src="./assets/JS_logo.png" alt=""></div>
+                <div class="skill-item skill-item--react"><img src="./assets/REACT_logo.png" alt=""></div>
+                <div class="skill-item"><img src="./assets/GIT_logo.png" alt=""></div>
+                <div class="skill-item"><img src="./assets/GITHUB_logo.png" alt=""></div>
+                <div class="skill-item skill-item--nodejs"><img src="./assets/NODEJS_logo.png" alt=""></div>
+                <div class="skill-item"><img src="./assets/LINUX_logo.png" alt=""></div>
             </section>
         </section>
-        <section class="main-projects">
+        <section class="main-projects" id="projects">
             <h2>MY PROJECTS</h2>
             <section class="projects-container">
                 <div class="project-item">
@@ -54,17 +62,15 @@
                     <p class="description">Breve descripcion del proyecto</p>
                     <div class="technologies-container">
                         <p class="technology-item">Tec Example</p>
-                        <p class="technology-item">Tec Example</p>
-                        <p class="technology-item">Tec Example</p>
                     </div>
                     <div class="footer-project">
-                        <div class="btn-see-more">
+                        <a href="" class="btn-see-more">
                             <span class="see-more-icon"></span>
                             <p>See More</p>
-                        </div>
+                        </a>
                         <div class="icons-container">
-                            <span class="github-icon"></span>
-                            <span class="web-icon"></span>
+                            <a href="" class="github-icon"></a>
+                            <a href="" class="web-icon"></a>
                         </div>
                     </div>
                 </div>
@@ -92,7 +98,38 @@
             </section>
 
         </section>
+        <section class="main-contact-me" id="contactMe">
+            <h2>Contact Me</h2>
+            <div class="social-media-container">
+                <article class="social-media-item">
+                    <p class="social-title">Email</p>
+                    <p class="social-content">Email me at <a href="">lumanuelgonzalez@hotmail.com</a></p>
+                    <img src="./assets/contact-icon.svg" alt="">
+                </article>
+                <article class="social-media-item">
+                    <p class="social-title">LinkdIn</p>
+                    <p class="social-content">Connect with me on <a href="https://www.linkedin.com/in/luis-manuel-gonzalez-rodriguez-5a96681a0/">LinkedIn</a></p>
+                    <img src="./assets/linkedin-icon.png" alt="">
+                </article>
+                <article class="social-media-item">
+                    <p class="social-title">Github</p>
+                    <p class="social-content">Follow me on <a href="https://github.com/luisgonzalez2001">Github</a></p>
+                    <img src="./assets/github-icon.png" alt="">
+                </article>
+            </div>
+        </section>
     </main>
+    <footer>
+        <section class="name-container">
+            <a href="/"><img src="./assets/logo-icon.svg" alt="Logo de mi blog"></a>
+            <p>Luis Gonzalez Portfolio</p>
+        </section>
+        <section class="social-icon-container">
+            <a href="https://www.linkedin.com/in/luis-manuel-gonzalez-rodriguez-5a96681a0/" class="linkedin-social-icon"></a>
+            <a href="https://github.com/luisgonzalez2001" class="github-social-icon"></a>
+            <a href="" class="email-social-icon"></a>
+        </section>
+    </footer>
 
     <script src="./src/main.js"></script>
 </body>

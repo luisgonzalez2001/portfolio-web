@@ -1,0 +1,35 @@
+:root {
+    --black: #0d1117;
+    --white: #ffffff;
+    --gray: #4e5053;
+    --gold: #bb871e;
+    --dark-blue: #1d2236;
+    --purple: #a855f7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--black);
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: var(--black);
+    z-index: 1;
+}
